@@ -1,5 +1,4 @@
-<B>codecamp_10</b>
-
+Codecamp_10
 
 "Homework1"
 1. สร้างหน้า index.html เป็น homepage 

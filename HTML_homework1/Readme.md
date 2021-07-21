@@ -1,5 +1,7 @@
 #Codecamp_10
 
+https://boat718.github.io/HTML/HTML_homework1/
+
 "Homework1"
 1. สร้างหน้า index.html เป็น homepage 
 - มีภาพที่แสดงความเป็นตัวเอง และ motto ประจำตัว

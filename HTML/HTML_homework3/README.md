@@ -1,8 +1,10 @@
-#CodeCamp #10
+# CodeCamp #10
 
-https://boat718.github.io/HTML/HTML_homework3/phonebook.html
+# https://boat718.github.io/HTML/HTML_homework3/phonebook.html
 
-Homework #3 (option)
+# Kittikawin Pawabut
+
+# Homework #3 (option)
 
 ให้สร้าง phonebook.html ในแบบ responsive 
 เพื่อสร้างเป็นสมุดโทรศัพท์บน smart phone

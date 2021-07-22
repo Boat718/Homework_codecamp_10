@@ -1,3 +1,3 @@
-# CodeCamp 10
+# Homework_codecamp_10
 
 Kittikawin Pawabut

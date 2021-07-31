@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <script>
+        //1. Browser จะโชว์ข้อความ “Hello Codecamp #5” ไหม
+         if("0"){
+             alert("Hello CodeCamp #10"); }
+         // โชว์
+
+        //2. ใช้ if else ในการเขียนถามชื่อของคุณ
+        let name = prompt("Your name: ");
+        if (name == "Boat"){
+            alert("เก่งมาก");
+        }
+        else {
+            alert("คุณไม่รู้จักชื่อฉัน")
+        }
+
+        //3.ใช้ prompt ในการรับคะแนนมาคำนวณเกรด
+        let score = Number(prompt("Your score: "));
+        if (score >= 80) {
+            alert("ได้ A");
+        }
+        else if (score >= 70) {
+            alert("ได้ B");
+        }
+        else if (score >= 60) {
+            alert("ได้ C");
+        }
+        else if (score >= 50) {
+            alert("ได้ D");
+        }
+        else if (score < 50) {
+            alert("ได้ F");
+        }
+
+        // 4.เปลี่ยน if-else ข้างล่างในอยู่ในรูปของ Ternary Operators
+            let age = prompt("How old are you ? :");
+            let price;
+
+            price = (age < 18) ? price =2000 : price = 3500;
+
+        
+    </script>
+    
+</body>
+</html>

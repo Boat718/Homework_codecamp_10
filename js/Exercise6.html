@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+<body>
+    <script>
+        //1. คำสั่งต่อไปนี้จะแสดงค่าเป็นอะไร
+        alert(null || 2 || undefined); // 2
+        alert(alert(1) || 2 || alert(3)); // alert(1) then 2
+        alert(1 && null &&2); //null
+        alert( alert(1) && alert(2)); // alert(1) then undefined
+        alert( null || 2 && 3 || 4); // 3 
+
+
+        //2. เขียนคำสั่ง if ที่เช็คอายุว่าอยู่ระหว่าง 18 - 60
+        let age = Number(prompt("Input your age: "));
+        if (age >= 18 && age <= 60){
+            alert("Your age is between 18 and 60");
+        }
+        else {
+            alert ("error");
+        }
+        //3. เขียนคำสั่ง if ที่เช็คอายุว่าไม่อยู่ระหว่าง 18 - 60
+        if (age < 18 || age > 60) {
+            alert("your age isn't between 18 and 60");
+        }
+        else {
+            alert("Error");
+        }
+
+
+        //4. คำสั่ง alert ไหนที่จะถูกรันบ้าง
+        if (-1 || 0) alert('first'); // Run
+        if (-1 && 0) alert("second"); // Not run
+        if(null || -1 && 0) alert("third"); // Not run
+
+
+        //5. ให้เขียนระบบ login
+        let user = (prompt(" User Login: "));
+
+        if (user == "Admin"){
+            let pass = prompt(" Passworld");
+
+            if (pass === "CodeCamp#10"){
+                alert("ยินดีต้อนรับ");
+            }
+            else if (pass == "" || pass == null ){
+                alert("ยกเลิก");
+            }
+            else{
+                alert("wrong password");
+            }
+        }
+        else if (user == "" || user == null) {
+            alert("ยกเลิก");
+        }
+        else{
+            alert("ผมไม่รู้จักคุณ");
+        }
+
+    </script>
+    
+</body>
+</html>

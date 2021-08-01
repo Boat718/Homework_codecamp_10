@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <script>
+        //1. เลขที่ถูก alert เป็นลำดับสุดท้ายคือเลขอะไร
+         let i = 3;
+         while (i){
+            alert(i--);
+         } // 1
+
+
+        // 2.code ทั้งสองอันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่
+        let i = 0;
+        while (++i<5) alert(i); // 1 2 3 4
+        while (i++<5) alert(i); // 1 2 3 4 5 ไม่เหมือน
+
+        
+        //3.code ทั้งสองอันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่
+        for (let i=0; i<5; i++) alert(i); // 0 1 2 3 4
+        for (let i=0; i<5; ++i) alert(i); // 0 1 2 3 4 เหมือนกัน
+
+
+        //4.ให้เขียน loop ทั้งแสดงเลข 2 ถึง 10 ออกมา
+        for(let i = 2; i<=10; i++) console.log(i);
+
+
+        //5.เปลี่ยน code for loop ด้านล่างนี้ให้เป็น while loop โดยที่ผลลัพธ์ยังเหมือนเดิม
+        let i = -1;
+        while(++i <= 2) console.log(`number ${i}`);
+
+
+        //6.ให้เขียนเกมส์ทายตัวเลขสำหรับเล่นสองคน 
+        while(true){
+            let p1 = prompt("P1s Number 1-100: ");
+            let p2 = prompt("P2s Number 1-100: ");
+
+            if( p1 == p2){
+                alert("correct");
+                break;
+            }
+            else if( p1 > p2){
+                alert("Incorrect, less than P1");
+            }
+            else if(p2 > p1){
+                alert("Incorrect, more than P1");
+            }
+        }
+    </script>
+    
+</body>
+</html>

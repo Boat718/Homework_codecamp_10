@@ -83,6 +83,7 @@
 2.แปลง Code ดังกล่าวเป็น Switch cases
 
 # Exercise Function (Exercise 9)
+- แบบฝึก 24 ข้อ 
 
 # Exercise Arrow Function  (Exercise 10)
 แปลง function ข้างล่างให้อยู่ในรูป arrow function

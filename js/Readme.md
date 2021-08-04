@@ -78,6 +78,14 @@
     - ให้ผู้เล่นคนแรกพิมพ์เลขใส่ใน prompt ที่อยู่ระหว่าง 1 ถึง 100 โดยไม่ให้ผู้เล่นคนที่สองรู้ว่าตัวเลขเป็นอะไร
     - และให้ผู้เล่นคนที่สองทายเลขโดยการพิมพ์เลขใส่ใน prompt จนกว่าจะถูก ถ้าไม่ถูก จะต้องบอกด้วยว่าเลขที่ผู้เล่นคนที่สองพิมพ์เข้ามา มากกว่า หรือ น้อยกว่าคำตอบนั้น
 
+# Exercise Switch Cases (Exercise 8 )
+1.แปลง Code ดังกล่าวเป็น if-else statement
+2.แปลง Code ดังกล่าวเป็น Switch cases
+
+# Exercise Function (Exercise 9)
+
+# Exercise Arrow Function  (Exercise 10)
+แปลง function ข้างล่างให้อยู่ในรูป arrow function
 
 
 

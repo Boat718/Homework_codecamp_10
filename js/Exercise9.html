@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.
+        function method_draw(n){
+            let a = "";
+            for(let i = 1; i <= n; i++){
+                a += '*';
+            }
+            console.log(a);
+        }
+
+        //2.
+        function method_draw(n){
+            let a = "";
+            for(let j = 1; j <= n; j++){
+                a += '*';
+            }
+            for(let i = 1; i <= n; i++){
+                console.log(a);
+            } 
+        }
+
+        //3.
+        function method_draw(n){
+            let a = "";
+            for(let j = 1; j <= n; j++){
+                a += j;
+            }
+            for(let i = 1; i <= n; i++){
+                console.log(a);
+            } 
+        }
+
+
+        //4.
+         function method_draw(n){       
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = 1; l <=n; l++){
+                    a += j
+                }
+                console.log(a);
+            }  
+        }
+
+        //5.
+        function method_draw(n){       
+            for(let j = n; j > 0; --j){
+                let a = "";
+                for(let l = 1; l <=n; l++){
+                    a += j
+                }
+                console.log(a);
+            }  
+        }
+
+        //6.
+        function method_draw(n){
+            for(let j = 0; j < n; j++){
+                let a = "";
+                for(let l = 1 ; l <= n ; l++){
+                    a += n*j+l;
+                }
+                console.log(a);
+            }
+            
+        }
+
+        //7.
+        function method_draw(n){
+            for(let j = n; j > 0; j--){
+                let a = "";
+                for(let l = 0 ; l < n; l++){
+                    a += n*j-l;
+                }
+                console.log(a);
+            }
+        }
+
+        //8
+        function method_draw(n){
+            let a = 0;
+            for(let j = 0; j < n; j++){
+                a = j*2
+                console.log(a);
+            }
+        }
+
+
+        //9.
+         function method_draw(n){
+            let a = 0;
+            for(let j = 1; j <= n; j++){
+                a = j*2
+                console.log(a);
+            }
+        }
+
+        
+        //10.
+         function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = 1; l <= n; l++){
+                    a += j*l;
+                }
+                console.log(a);
+            }
+        }
+
+
+        //11.
+         function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = 1; l <= n; l++){
+                    (j == l)? a += "-" : a+="*";
+                }
+                console.log(a);
+            }
+        }
+
+        //12.
+        function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                //1 21 2 21, 1 321 2 321 3 321
+                for(let l = n; l > 0; l--){
+                    (j == l )? a += "-" : a+="*";
+                }
+                console.log(a);
+            }
+        }
+
+        //13.
+        function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = 1; l <= n; l++){
+                    (j >= l )? a += "*" : a+="-";
+                }
+                console.log(a);
+            }
+        }
+
+
+        //14.
+        function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = n; l > 0; l--){
+                    (j <= l )? a += "*" : a+="-";
+                }
+                console.log(a);
+            }
+        }
+
+        //15.
+        function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = 1; l <=n; l++){
+                    (j >= l )? a += "*" : a+="-";
+                }
+                console.log(a);
+            }
+
+            for (let s = 1; s<n; s++){
+                let b ="";
+                for( let d = n; d > 0; d--){
+                    ( s < d)? b+="*" : b+="-";
+                }
+                console.log(b)
+            }
+        }
+
+        //17.
+        function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = n; l >0; l--){
+                    (j >= l )? a += "*" : a+="-";
+                }
+                console.log(a);
+            }
+        }
+
+
+        //18.
+        function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = 1; l <=n ; l++){
+                    (j <= l )? a += "*" : a+="-";
+                }
+                console.log(a);
+            }
+        }
+
+
+        //19.
+        function method_draw(n){
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = n; l >0; l--){
+                    (j >= l )? a += "*" : a+="-";
+                }
+                console.log(a);
+            }
+        
+
+            for (let s = 1; s<n; s++){
+                let b ="";
+                for( let d = 1; d <= n; d++){
+                    ( s < d)? b+="*" : b+="-";
+                }
+                console.log(b)
+            }
+        }
+
+
+
+        //20.
+        function method_draw(n){
+            let c = 1;
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = n; l >0; l--){
+                    (j >= l )? a += c++ : a+="-";
+                }
+                console.log(a);
+            }
+
+                for (let s = 1; s<n; s++){
+                let b ="";
+                for( let d = 1; d <= n; d++){
+                    ( s < d)? b+= c++ : b+="-";
+                }
+                console.log(b)
+            }
+        }
+
+
+        //21.
+        function method_draw(n){
+
+            for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = n; l > 0; l--){
+                    (j < l )? a += "-" : a+="*";
+                }
+                for(let l = 1; l < n; l++){
+                    (j <= l )? a += "-" : a+="*";
+                }
+                console.log(a);
+            }
+        }
+
+
+        //22.
+            function method_draw(n){
+             for(let j = 1; j <= n; j++){
+                let a = "";
+                for(let l = 1; l <= n; l++){
+                    (j > l )? a += "-" : a+="*";
+                }
+                for(let l = n; l > 1; l--){
+                    (j >= l )? a += "-" : a+="*";
+                }
+                console.log(a);
+            }
+        }
+
+
+        //23.
+        function method_draw(n){
+            for(let i = 1; i <= n; i++){
+                let a = "";
+                for(let j = n; j > 0 ; j--){
+                    (i >= j )? a += "*" : a+="-";
+                }
+                for(let k = 1; k < n; k++){
+                    (i > k )? a += "*" : a+="-";
+                }
+                console.log(a);
+            }
+            for (let l = 1; l < n; l++){
+                let b ="";
+                for(let m = 1; m <= n ; m++){
+                    (l < m )? b+="*" : b+="-";
+                }
+                for( let p = n-1; p > 0; p--){
+                    ( l < p)? b+= "*" : b+="-";
+                }
+                console.log(b)
+            }
+        }
+        
+
+        //24.
+        function method_draw(n){
+            let c = 1;
+            for(let i = 1; i <= n; i++){
+                let a = "";
+                for(let j = n; j > 0 ; j--){
+                    (i >= j )? a += c++ : a+="-";
+                }
+                for(let k = 1; k < n; k++){
+                    (i > k )? a += c++ : a+="-";
+                }
+                console.log(a);
+            }
+            for (let l = 1; l < n; l++){
+                let b ="";
+                for(let m = 1; m <= n ; m++){
+                    (l < m )? b+=c++ : b+="-";
+                }
+                for( let p = n-1; p > 0; p--){
+                    ( l < p)? b+= c++ : b+="-";
+                }
+                console.log(b)
+            }
+        }
+
+
+
+
+        
+
+
+        
+
+    </script>
+</body>
+</html>

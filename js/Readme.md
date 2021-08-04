@@ -1,4 +1,4 @@
-# CodeCampe 10
+# CodeCamp 10
 
 # Kittikawin Pawabut
 

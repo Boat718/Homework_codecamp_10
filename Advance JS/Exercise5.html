@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //1.
+        let user = {
+        name: "John",
+        go: function() { alert(this.name) }
+    };
+        (user.go)() //John
+
+        //2.
+        function makeUser() {
+            return {
+                name: "John",
+                ref: this
+            };
+        };
+
+        let user = makeUser();
+        alert( user.ref.name ); // Undefined
+
+        //3
+        let calculator = {
+            read () {
+                this.number1 = Number(prompt("Enter1: "));
+                this.number2 = Number(prompt("Enter2: "));
+
+            },
+            mul(){
+                return this.number1 * this.number2;
+            },
+            sum(){
+                return this.number1 + this.number2;
+            }
+        };
+
+        calculator.read();
+        alert (calculator.sum());
+        alert(calculator.mul());
+
+
+        //4.
+        let ladder = {
+        step: 0,
+        up() {
+            this.step++;
+            return this;
+        },
+        down() {
+            this.step--;
+            return this;
+        },
+        showStep: function() { // shows the current step
+            alert( this.step );
+            return this;
+        }
+        };
+
+        ladder.up().up().down().showStep(); 
+
+
+
+        
+    </script>
+    
+</body>
+</html>

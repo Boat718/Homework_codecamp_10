@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.
+        /* let fruits = ["Apples", "Pear", "Orange"];
+         let shoppingCart = fruits;
+         shoppingCart.push("Banana");
+         alert( fruits.length );
+         array ยาว 4
+        */
+
+        //2
+        let styles = ["Jazz", "Blues"];
+        styles.push("Rock-n-Roll");
+        styles[1] = "Classics";
+        styles.shift();
+        styles.unshift("Rap","Reggae");
+
+        //3
+        function SumInput() {
+            let arr = [];
+            let i = 0;
+            while (true){
+                let a = (prompt("Enter: "));
+                if( a != Number(a)) break;
+                arr.push(Number(a));
+            }
+            console.log(arr)
+
+            for (let b = 0 ; b < arr.length; b++){
+                i += arr[b];
+            }
+            return i ;
+        }
+        console.log(SumInput());
+
+
+    </script>
+</body>
+</html>

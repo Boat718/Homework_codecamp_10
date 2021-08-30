@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.
+        
+        function Rabbit() {}
+        Rabbit.prototype = {
+            eats: true
+        }
+        let rabbit = new Rabbit();
+        console.log(rabbit.eats);
+
+        //2.
+        function Rabbit() {}
+        Rabbit.prototype = {
+            eats: true
+        }
+        let rabbit = new Rabbit();
+        Rabbit.prototype = {};
+        console.log(rabbit.eats); 
+
+        //3
+        function Rabbit() {}
+        Rabbit.prototype = {
+            eats: true
+        }
+        let rabbit = new Rabbit();
+        Rabbit.prototype.eats = false;
+        console.log(rabbit.eats); 
+
+        //4
+        function Rabbit() {}
+        Rabbit.prototype = {
+            eats: true
+        }
+        let rabbit = new Rabbit();
+        delete rabbit.eats;
+        console.log(rabbit.eats);
+
+        //5
+        function Rabbit() {}
+        Rabbit.prototype = {
+            eats: true
+        }
+        let rabbit = new Rabbit();
+        delete Rabbit.prototype.eats;
+        console.log(rabbit.eats);
+        
+
+    </script>
+    
+</body>
+</html>

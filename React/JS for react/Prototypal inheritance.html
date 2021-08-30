@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //1.
+        
+        let animal = {
+            jumps: null
+        };
+        let rabbit = {
+            __proto__:animal,
+            jumps: true
+        }
+        alert(rabbit.jumps); //true
+        delete rabbit.jumps;
+        alert(rabbit.jumps); //null
+        delete rabbit.jumps;
+        alert(rabbit.jumps); //null
+
+        //2.
+        let head = { glasses:1 
+        };
+        let tabel = { pen:3,
+            __proto__:head
+        }
+        let bed = {
+            sheet:1,
+            pillow: 2,
+            __proto__:tabel
+        }
+        let pockets = {
+            money: 2000,
+            __proto__: bed
+        }
+        console.log(pockets.glasses)
+
+        //3.
+        let animal = {
+            eat(){
+                this.full = true;
+            }
+        }
+        let rabbit = {
+            __proto__: animal
+        };
+        rabbit.eat();
+
+        //4.
+        let hamster = {
+            eat(food){
+            if(!this.stomach) this.stomach = []
+                this.stomach.push(food);
+            }
+        }
+
+        let speedy = {
+            __proto__ : hamster
+        }
+
+        let lazy = {
+            __proto__: hamster
+        }
+
+        speedy.eat("apple");
+        lazy.eat("CCCC")
+
+    </script>
+</body>
+</html>

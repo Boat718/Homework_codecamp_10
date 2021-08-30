@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.
+        let user = {
+            name: "john",
+            years: 30
+        }
+
+        //Variableeeee
+        let {name, years: age, isAdmin = false} = user;
+        console.log(name,age, isAdmin)
+
+        //2.
+        let salaries = {
+            "John":100,
+            "Pete": 300,
+            "Mary": 250
+        }
+
+        function topSalary (salaries) {
+            let ms = 0;
+            let n = null;
+            for(name in salaries){
+                console.log(name)
+                if (salaries[name] > ms){
+                    ms = salaries[name];
+                    n = name;
+                }
+                console.log(ms)
+            }
+            return n
+        }
+
+        console.log(topSalary(salaries));
+
+
+    </script>
+    
+</body>
+</html>

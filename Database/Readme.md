@@ -2,7 +2,7 @@
 
 # Kittikawin Pawabut 24
 
-    Database : Exercise 1.1
+    # Database : Exercise 1.1
         1. แบบฝึกหัดที่ 1
         Database ของมหาวิทยาลัย CodeCampXX ที่ประกอบไปด้วยข้อมูลของอาจารย์(มี id เป็น unique attribute) 
         และรายวิชา(มี cid เป็น unique attribute) เก็บข้อมูลอาจารย์สอนรายวิชาต่าง ๆ จงวาด ER Diagram ทั้ง 4 เงื่อนไขต่อไปนี้ (4 ER Diagrams)
